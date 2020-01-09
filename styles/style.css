@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins|Public+Sans:100&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #674bb1;
+}
+
+main {
+  color: white;
+  padding: 0 10% 10% 10%;
+}
+
+header {
+  background-image: url(/assets/images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  background-attachment: fixed;
+  padding: 10% 10% 0 10%;
+}
+
+h2,
+button {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 10px;
+}
+
+p {
+  font-family: "Public Sans", sans-serif;
+  font-size: 10;
+  text-align: center;
+}
+
+main,
+footer {
+  text-align: center;
+}
+
+footer {
+  padding: 0 0 30px 0;
+}
+
+.logo {
+  height: 25px;
+}
+
+.illustration {
+  display: none;
+}
+
+.illustration-mb {
+  margin: 50px 0px;
+  width: 100%;
+}
+
+.principal-button {
+  background-color: white;
+  border: none;
+  border-radius: 25px;
+  color: #674bb1;
+  padding: 10px;
+  width: 70%;
+  margin: 25px;
+}
+
+.contact-icon {
+  width: 30px;
+  margin-left: 5px;
+}
+
+@media only screen and (min-width: 961px) {
+  header {
+    all: initial;
+  }
+
+  body {
+    background-image: url(/assets/images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    padding: 30px 50px 20px 50px;
+  }
+
+  main {
+    align-items: center;
+    display: flex;
+    justify-content: left;
+    padding: 0px;
+    text-align: left;
+    margin-top: 50px;
+  }
+
+  footer {
+    text-align: right;
+    padding: 0px;
+  }
+
+  p {
+    text-align: left;
+  }
+
+  .logo {
+    height: 50px;
+  }
+
+  .illustration-mb {
+    display: none;
+  }
+
+  .illustration {
+    display: block;
+    width: 53%;
+    margin-right: 50px;
+  }
+
+  .principal-button {
+    margin-left: 0;
+    width: 30%;
+    padding: 13px;
+  }
+}
